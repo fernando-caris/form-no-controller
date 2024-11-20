@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Construimos la app para producción
-RUN npm run build
+RUN npm run dev
 
 # Usamos una imagen ligera para producción
 FROM nginx:alpine

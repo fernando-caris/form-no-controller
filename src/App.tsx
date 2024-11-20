@@ -1,9 +1,12 @@
+import styles from './App.module.scss';
+import Form from './assets/components/Form/Form';
+
 function App() {
 
   return (
-    <>
-      <h1>Inicio del Proyecto: Formulario no controlado con React</h1>
-    </>
+    <div className={styles.container}>
+      <Form/>
+    </div>
   )
 }
 
