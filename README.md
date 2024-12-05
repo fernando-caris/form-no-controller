@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+# Formulario No Controlado con React y TypeScript
+## Descripción
+Este proyecto consiste en un formulario no controlado desarrollado con **React** y **TypeScript**. El objetivo principal es proporcionar una aplicación simple que se pueda ejecutar en un contenedor **Docker**, lo que permite probar su funcionamiento de manera consistente en cualquier entorno. Además, este proyecto incluye una guía detallada sobre cómo desplegar la aplicación en una instancia EC2 de **AWS** para facilitar las pruebas en la nube con Docker.
+## Tecnologías
+  - React - TypeScript - Docker - AWS (EC2)
+  - Html - css - sass - Js
+### Requisitos
+1. Tener instalado Git
+2. Tener instalado Docker
+### Pasos
+1. **Clonar el repositorio:**
+   Para comenzar, clona este repositorio en tu máquina local o servidor.
+   Tambien puedes ejecutar en una instancia **ec2** Con la siguiente Guia [AWS-Guia.md](./AWS-Guia.md)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+   ```bash
+   git clone https://github.com/fernando-caris/form-no-controller.git
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. **Clonar el repositorio:**
+   Para comenzar, clona este repositorio en tu máquina local o servidor.
+   Tambien puedes ejecutar en una instancia **ec2** Con la siguiente Guia [AWS-Guia.md](./AWS-Guia.md)
