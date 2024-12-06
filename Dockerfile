@@ -1,21 +1,35 @@
-# Usamos una imagen base de node.js
-FROM node:20-alpine
+# Etapa de construcción
+FROM node:20 AS build
 
-# Definimos el directorio de trabajo
+# Establecer directorio de trabajo
 WORKDIR /app
 
-
-# Copiamos los archivos de configuración de npm (y package-lock.json o yarn.lock)
+# Copiar archivos de dependencias
 COPY package.json package-lock.json ./
 
-# Instalamos las dependencias
+# Instalar las dependencias
 RUN npm install
 
-# Copiamos el resto de los archivos de la app
+# Copiar el resto de los archivos de la app
 COPY . .
 
-# Exponemos el puerto 80 para que nginx pueda servir los archivos estáticos
-EXPOSE 5173
+# Crear los archivos de producción
+RUN npm run build
 
-# Iniciamos nginx en modo foreground para que el contenedor no se cierre
-CMD ["npm", "run", "dev"]
+# Etapa de producción
+FROM node:20 AS production
+
+# Instalar 'serve' para servir los archivos estáticos
+RUN npm install -g serve
+
+# Establecer el directorio de trabajo
+WORKDIR /app
+
+# Copiar los archivos de producción desde la etapa de construcción
+COPY --from=build /app/dist /app/build
+
+# Exponer el puerto 3000
+EXPOSE 3000
+
+# Comando para servir la aplicación
+CMD ["serve", "-s", "build", "-l", "3000"]
