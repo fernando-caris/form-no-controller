@@ -41,8 +41,4 @@ En esta guía, aprenderás cómo configurar una instancia EC2 en AWS y prepararl
 
 ### 7. Lanza la Instancia
 - Revisa tu configuración y haz clic en **"Lanzar instancia"** para completarlo.
-
-
-
-
 ![Lanzar instancia](./images/a1.jpg)
