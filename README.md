@@ -25,10 +25,15 @@ Este proyecto consiste en un formulario no controlado desarrollado con **React**
    ```
 
 3. **Ejecutar el contenedor Docker:**
-   Ejecuta la aplicación en un contenedor Docker mapeando el puerto 3000 al puerto 80 de tu máquina:
+   Ejecuta la aplicación en un contenedor Docker mapeando el puerto 3000 al puerto 80 de tu máquina, estara corriendo en segundo plano:
    ```bash
-   docker run -p 80:3000 formulario-react
+   docker run -d -p 80:3000 formulario-react
    ```
+4. **¡Listo!**:
+Tu aplicación ahora está corriendo en el contenedor Docker. Para acceder a ella, simplemente abre tu navegador y dirígete a:
+http://\<tu-ip-publica\>:80
+
+Recuerda que \<tu-ip-publica\> debe ser reemplazada por la dirección IP pública de tu instancia EC2. El puerto 80 está mapeado al puerto 3000 de tu aplicación dentro del contenedor, así que no tienes que preocuparte por nada más. ¡Tu app debería estar visible y funcionando!
    
    
    
