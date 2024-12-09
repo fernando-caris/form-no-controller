@@ -11,7 +11,7 @@ Este proyecto consiste en un formulario no controlado desarrollado con **React**
 ### Pasos
 1. **Clonar el repositorio:**
    Para comenzar, clona este repositorio en tu máquina local o servidor.
-   Tambien puedes ejecutar en una instancia **ec2** Con la siguiente Guia [AWS-Guia.md](./AWS-Guia.md) Recuerda tener Git y Docker instalados, listo para usar.
+   Tambien puedes ejecutar en una instancia **ec2** Con la siguiente Guia [AWS-Guia.md](./AWS-Guia.md) Recuerda tener Git y Docker instalados dependiendo de donde ejecutaras la app, listo para usar.
 
    ```bash
    git clone https://github.com/fernando-caris/form-no-controller.git
