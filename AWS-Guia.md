@@ -42,3 +42,7 @@ En esta guía, aprenderás cómo configurar una instancia EC2 en AWS y prepararl
 ### 7. Lanza la Instancia
 - Revisa tu configuración y haz clic en **"Lanzar instancia"** para completarlo.
 ![Lanzar instancia](./images/a1.jpg)
+
+### 8. Agregar regla de entrada
+- Para lanzar la app deberas tener la regla de entrada en el puerto 80 para http
+  ![Regla de entrada](./images/regla.jpg)
