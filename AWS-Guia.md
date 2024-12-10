@@ -42,3 +42,8 @@ En esta guía, aprenderás cómo configurar una instancia EC2 en AWS y prepararl
 ### 7. Lanza la Instancia
 - Revisa tu configuración y haz clic en **"Lanzar instancia"** para completarlo.
 ![Lanzar instancia](./images/a1.jpg)
+
+### 8. Agregar regla de entrada
+- Para poder acceder a tu aplicación desde un navegador, asegúrate de tener una regla de entrada en el grupo de seguridad de tu instancia EC2 que permita el tráfico a través del puerto 80 para HTTP.
+Esta regla permitirá que los usuarios se conecten a tu aplicación a través de la IP pública de tu instancia en el puerto 80.
+  ![Regla de entrada](./images/regla.jpg)
