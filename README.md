@@ -1,7 +1,15 @@
 # Formulario No Controlado con React y TypeScript
 ![Imagen de la página de inicio de EC2](./images/GIF.gif)
 ## Descripción
-Este proyecto consiste en un formulario no controlado desarrollado con **React** y **TypeScript** totalmente responsivo. El objetivo principal es proporcionar una aplicación simple que se pueda ejecutar en un contenedor **Docker**, lo que permite probar su funcionamiento de manera consistente en cualquier entorno. Además, este proyecto incluye una guía detallada sobre cómo desplegar la aplicación en una instancia EC2 de **AWS** para facilitar las pruebas en la nube con Docker.
+
+Este Proyecto Tiene la intención de mejorar mi habilidades y mostrar mis avanzes en **AWS** y **DOCKER**.
+Consiste en un formulario no controlado desarrollado con **React** y **TypeScript** totalmente responsivo. El objetivo principal es proporcionar una aplicación simple que se pueda ejecutar en un contenedor **Docker**, lo que permite probar su funcionamiento de manera consistente en cualquier entorno. Además, este proyecto incluye una guía detallada sobre cómo desplegar la aplicación en una instancia EC2 de **AWS** para facilitar las pruebas en la nube con Docker.
+<div>
+  <br>
+  <img src="./images/aws.png" alt="Aws" width="250">
+  <img src="./images/docker.png" alt="Docker" width="250">
+</div>
+
 ## Tecnologías
   - React - TypeScript - Docker - AWS (EC2)
   - Html - css - sass - Js
